@@ -53,6 +53,10 @@ POSTGRES_PORT=..
 3. Примените миграции:
 
 ```bash
+alembic revision --autogenerate -m "Init migration"
+```
+
+```bash
 alembic upgrade head
 ```
 
@@ -69,7 +73,7 @@ uvicorn app.main:app --reload
 > Перед запуском убедитесь, что создана тестовая база данных `vacation_test_db`.
 
 ```bash
-pytest -v
+pytest
 ```
 
 ---
