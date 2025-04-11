@@ -20,8 +20,7 @@
 git clone https://github.com/makstravel/testovoe_sirius.git && cd testovoe_sirius
 ```
 
-> Убедитесь, что PostgreSQL запущен, и в системе создана база данных `vacation_db`.
-> 
+
 > Создайте базу данных vacation_db
 ```bash
 psql -U postgres
@@ -29,6 +28,10 @@ psql -U postgres
 ```bash
 CREATE DATABASE vacation_db;
 ```
+> Убедитесь, что PostgreSQL запущен, и в системе создана база данных `vacation_db`.
+
+
+
 
 1. Установите зависимости:
 
