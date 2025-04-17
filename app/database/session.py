@@ -1,5 +1,5 @@
 from sqlalchemy.ext.asyncio import AsyncSession, create_async_engine, async_sessionmaker
-from sqlalchemy.orm import declarative_base  # Используйте правильный импорт
+from sqlalchemy.orm import declarative_base 
 from app.core.config import get_settings
 from dotenv import load_dotenv
 
@@ -20,7 +20,6 @@ async_session_maker = async_sessionmaker(
     engine, class_=AsyncSession, expire_on_commit=False
 )
 
-# Используйте declarative_base вместо DeclarativeBase
 Base = declarative_base()
 
 
